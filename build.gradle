@@ -1,0 +1,15 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+group = 'cc.cu.netvl.gradle'
+version = '1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+    testCompile 'junit:junit:4.11'
+}

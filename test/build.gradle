@@ -1,0 +1,35 @@
+apply plugin: 'java'
+apply plugin: 'launch4gradle'
+
+version = '1.0'
+
+buildscript {
+    repositories {
+        mavenCentral()
+        mavenLocal()
+    }
+
+    dependencies {
+        classpath 'cc.cu.netvl.gradle:launch4gradle:1'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.guava:guava:16.0.1'
+}
+
+launch4j {
+    launch4jProgram = 'D:/programs/launch4j/launch4jc.exe'
+
+    executable {
+        headerType = CONSOLE
+
+        classPath {
+            mainClass = 'example.Main'
+        }
+    }
+}
