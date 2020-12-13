@@ -1,6 +1,10 @@
 launch4gradle plugin
 ====================
 
+**Unmaintained.**
+
+---
+
 launch4gradle is a plugin for Gradle build system which integrates with [launch4j][1] executable
 wrapper program and allows building binary executables out of JVM-based programs.
 
